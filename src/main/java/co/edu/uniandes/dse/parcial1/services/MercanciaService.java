@@ -22,6 +22,8 @@ public class MercanciaService {
     @Transactional
     public MercanciaEntity createMercancia(MercanciaEntity mercancia) throws InvalidParameterException {
 
+        log.info("Inicia proceso de crear mercancia");
+
         if(mercancia.getNombre().isBlank() || mercancia.getNombre().isEmpty() || mercancia.getNombre() == null){
 
             throw new InvalidParameterException("El nombre del producto es invalido");

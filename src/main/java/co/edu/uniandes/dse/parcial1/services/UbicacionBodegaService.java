@@ -19,6 +19,7 @@ public class UbicacionBodegaService {
     
     @Transactional
     public UbicacionBodegaEntity createUbicacionBodega(UbicacionBodegaEntity ubicacion) throws InvalidParameterException{
+        log.info("Inicia proceso de crear un lugar");
         if(ubicacion.getNumeroEstante() <= 0){
             throw new InvalidParameterException("El numero del estante es invalido");
 
