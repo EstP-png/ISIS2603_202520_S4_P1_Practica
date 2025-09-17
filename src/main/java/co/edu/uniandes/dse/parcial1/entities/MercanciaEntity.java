@@ -1,6 +1,5 @@
 package co.edu.uniandes.dse.parcial1.entities;
 
-import java.sql.Time;
 import java.time.LocalDateTime;
 
 import jakarta.persistence.Entity;
