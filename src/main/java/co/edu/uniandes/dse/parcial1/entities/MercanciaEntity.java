@@ -1,6 +1,8 @@
 package co.edu.uniandes.dse.parcial1.entities;
 
 import java.sql.Time;
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Entity;
 import lombok.Data;
 import uk.co.jemos.podam.common.PodamExclude;
@@ -14,7 +16,7 @@ public class MercanciaEntity extends BaseEntity{
 
     private String codigoBarras;
 
-    private Time fechaRecepcion;
+    private LocalDateTime fechaRecepcion;
 
     private Integer cantidadDisponible;
     
