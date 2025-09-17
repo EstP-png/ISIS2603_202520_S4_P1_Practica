@@ -7,5 +7,7 @@ import lombok.Data;
 @Entity
 public class UbicacionBodegaEntity extends BaseEntity{
    
-    
+    private Integer numeroEstante;
+    private String canasta;
+    private Double pesoMax;    
 }
